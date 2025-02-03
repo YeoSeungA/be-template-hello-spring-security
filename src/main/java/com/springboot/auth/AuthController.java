@@ -13,6 +13,11 @@ public class AuthController {
         return "login";
     }
 
+    @GetMapping("/access-denied")
+    public String accessDinied() {
+        return "access-denied";
+    }
+
 
     @PostMapping("/login")
     public String login() {
